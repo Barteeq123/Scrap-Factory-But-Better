@@ -43,7 +43,7 @@ function Burner:sv_onEnterDrop(shape)
 
         Drop:Sv_dropStored(shape.id)
 
-    elseif shape.uuid == obj_drop_scrap_wood or shape.uuid == obj_drop_scrap_wood then
+    elseif shape.uuid == obj_drop_scrap_wood or shape.uuid == obj_drop_wood then
         if publicData.pollution then return end
 
         powerFunc = function (x)
